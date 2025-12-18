@@ -5,9 +5,9 @@ from snowflake.snowpark.functions import col
     
 
 # Write directly to the app
-st.title(f":cup_with_straw: Customize Your Smoothie !:cup_with_straw: ")
+st.title('My Parents New Healthy Diner')
 st.write(
-  """Choose the fruits you want in your custom Smoothie!
+  """Breakfast Menu
   """
 )
 
@@ -17,8 +17,9 @@ name_on_order = st.text_input('Name on smoothie :')
 st.write('The name on your smoothie will be :', name_on_order)
 
 #option = st.selectbox(
-  #  "What is your favorite fruit?",
-   # ("Banana", "Strawberries", "Peaches"),)
+  #  "Omega 3 & Blueberry Oatmeal?",
+   # "Kale, Spinach & Rocket Smoothie",
+    #    "Hard-Boiled Free-Range Egg)
 #st.write("Your favorite fruit is", option)
 
 from snowflake.snowpark.functions import col
