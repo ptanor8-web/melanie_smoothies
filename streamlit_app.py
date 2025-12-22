@@ -55,15 +55,15 @@ my_insert_stmt = """ insert into smoothies.public.orders(ingredients, name_on_or
  
     #st.write(my_insert_stmt)
 
-    time_to_insert = st.button('Submit Order')
+time_to_insert = st.button('Submit Order')
 
     #st.stop()
 
-    if time_to_insert:
+if time_to_insert:
 
-        session.sql(my_insert_stmt).collect()
+     session.sql(my_insert_stmt).collect()
 
-        st.success('Your Smoothie is ordered, '+ name_on_order + '!', icon="✅")
+     st.success('Your Smoothie is ordered, '+ name_on_order + '!', icon="✅")
 
 
 
