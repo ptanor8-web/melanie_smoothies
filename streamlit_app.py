@@ -1,10 +1,11 @@
 # Import python packages
 
 import streamlit as st
-
+import pandas as pd
+from snowflake.snowpark.functions import col
 import requests
 
-from snowflake.snowpark.functions import col
+
  
 # Write directly to the app
 
@@ -44,7 +45,7 @@ ingredients_list = st.multiselect(
 )
  
 if ingredients_list:
-   ingredients_string = ''
+   ingredients_string ="
  
    for fruit_chosen in ingredients_list:
        ingredients_string += fruit_chosen + ' '
